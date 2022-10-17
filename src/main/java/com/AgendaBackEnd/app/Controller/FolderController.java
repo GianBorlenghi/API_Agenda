@@ -28,7 +28,7 @@ import com.AgendaBackEnd.app.Service.IFolderService;
 import com.AgendaBackEnd.app.Service.IUserService;
 
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = /*"*"*/"http://agenda-borlenghi-gian.web.app/")
 @RequestMapping("/api/folder")
 public class FolderController {
 
