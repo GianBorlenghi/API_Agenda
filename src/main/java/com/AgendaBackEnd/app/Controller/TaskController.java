@@ -39,7 +39,7 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = /*"*"*/"http://agenda-borlenghi-gian.web.app/")
 @RequestMapping("/api/task")
 public class TaskController {
 
