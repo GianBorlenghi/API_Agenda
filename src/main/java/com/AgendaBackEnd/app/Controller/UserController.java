@@ -29,7 +29,7 @@ import com.AgendaBackEnd.app.Model.User;
 import com.AgendaBackEnd.app.Service.IUserService;
 
 @RestController
-@CrossOrigin(origins = /*"*"*/"http://agenda-borlenghi-gian.web.app/")
+@CrossOrigin(origins = "*")
 @RequestMapping("api/user")
 public class UserController {
 	
