@@ -53,7 +53,7 @@ import com.AgendaBackEnd.app.Service.IRolService;
 import com.AgendaBackEnd.app.Service.IUserService;
 
 @RestController
-@CrossOrigin(origins = "*", allowedHeaders = { "Content-Type", "Authorization", "Access-Control-Allow-Origin" })
+@CrossOrigin(origins = /*"*"*/"http://agenda-borlenghi-gian.web.app/", allowedHeaders = { "Content-Type", "Authorization", "Access-Control-Allow-Origin" })
 @RequestMapping("/api")
 public class AuthController {
 
