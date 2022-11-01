@@ -128,4 +128,12 @@ public class UserController {
 		return userService.findUserById(id_user).getFolder_x_user();
 	}
 	
+	@PostMapping("/set_offline/{id}")
+	public String set_offline(@PathVariable(value="id") Long id){
+	 User us =  userService.findUserById(id);
+	 us.setIs_online(false);
+	 userService.save(us);
+	 return "ok";
+	}
+	
 }
