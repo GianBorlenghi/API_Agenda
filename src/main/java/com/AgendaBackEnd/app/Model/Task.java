@@ -41,13 +41,13 @@ public class Task {
 	private String task_name;
 	private boolean is_finished;
 
-	@DateTimeFormat(pattern = "yyyy-MM-dd'T'H:mm",iso = ISO.NONE)
-	@JsonFormat(shape = JsonFormat.Shape.ANY, pattern = "yyyy-MM-dd'T'H:mm")
+	@DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm",iso = ISO.NONE)
+	@JsonFormat(shape = JsonFormat.Shape.ANY, pattern = "yyyy-MM-dd'T'HH:mm")
 	@JsonDeserialize(using = LocalDateTimeDeserializer.class)
 	private LocalDateTime task_date_added;
 	
-	@DateTimeFormat(pattern = "yyyy-MM-dd'T'H:mm",iso = ISO.NONE)
-	@JsonFormat(shape = JsonFormat.Shape.ANY, pattern = "yyyy-MM-dd'T'H:mm")
+	@DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm",iso = ISO.NONE)
+	@JsonFormat(shape = JsonFormat.Shape.ANY, pattern = "yyyy-MM-dd'T'HH:mm")
 	@JsonDeserialize(using = LocalDateTimeDeserializer.class)
 	private LocalDateTime task_date;
 
