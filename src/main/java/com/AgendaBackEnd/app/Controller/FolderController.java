@@ -28,7 +28,7 @@ import com.AgendaBackEnd.app.Service.IFolderService;
 import com.AgendaBackEnd.app.Service.IUserService;
 
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "*", allowedHeaders = { "Content-Type", "Authorization", "Access-Control-Allow-Origin" })
 @RequestMapping("/api/folder")
 public class FolderController {
 
