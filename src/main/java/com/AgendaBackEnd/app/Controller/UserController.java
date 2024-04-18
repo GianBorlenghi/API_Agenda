@@ -30,7 +30,7 @@ import com.AgendaBackEnd.app.Model.User;
 import com.AgendaBackEnd.app.Service.IUserService;
 
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "*", allowedHeaders = { "Content-Type", "Authorization", "Access-Control-Allow-Origin" })
 @RequestMapping("api/user")
 public class UserController {
 	
