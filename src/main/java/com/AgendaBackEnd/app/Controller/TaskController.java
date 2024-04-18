@@ -39,7 +39,7 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "*", allowedHeaders = { "Content-Type", "Authorization", "Access-Control-Allow-Origin" })
 @RequestMapping("/api/task")
 public class TaskController {
 
